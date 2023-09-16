@@ -81,3 +81,15 @@ C:\Users\Acer\source\repos\Diary\obj\Debug\Diary.csproj.CoreCompileInputs.cache
 C:\Users\Acer\source\repos\Diary\obj\Debug\Diary.csproj.CopyComplete
 C:\Users\Acer\source\repos\Diary\obj\Debug\Diary.dll
 C:\Users\Acer\source\repos\Diary\obj\Debug\Diary.pdb
+C:\Users\Acer\source\repos\Diary\bin\FireSharp.dll
+C:\Users\Acer\source\repos\Diary\bin\Microsoft.Threading.Tasks.dll
+C:\Users\Acer\source\repos\Diary\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Acer\source\repos\Diary\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Acer\source\repos\Diary\bin\System.Net.Http.Extensions.dll
+C:\Users\Acer\source\repos\Diary\bin\System.Net.Http.Primitives.dll
+C:\Users\Acer\source\repos\Diary\bin\Microsoft.Threading.Tasks.xml
+C:\Users\Acer\source\repos\Diary\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Acer\source\repos\Diary\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Acer\source\repos\Diary\bin\System.Net.Http.Extensions.xml
+C:\Users\Acer\source\repos\Diary\bin\System.Net.Http.Primitives.xml
+C:\Users\Acer\source\repos\Diary\obj\Debug\Diary.csproj.App.config

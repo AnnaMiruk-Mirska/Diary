@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<br />
+<div class="panel-primary">
+    <div class="heading" style="background-color:white; width:150px; height:50px">
+        <h2> Dodaj pomiar </h2>
+    </div>
+    <div class="pane-body" style="font-size:18px; background-color:white; width:290px">
+
+
+        <form method="post" enctype="multipart/form-data">
+
+
+            <div class="form-group">
+                <label>Data</label>
+                <input class="form-control" type="datetime" name="Date" />
+            </div>
+
+            <div class="form-group">
+                <label>Ciśnienie skurczowe</label>
+                <input class="form-control" type="text" name="Systolic" />
+            </div>
+
+            <div class="form-group">
+                <label>Ciśnienie rozkurczowe</label>
+                <input class="form-control" type="text" name="Diastolic" />
+            </div>
+
+            <div class="form-group">
+                <label>Puls</label>
+                <input class="form-control" type="text" name="HeartRate" />
+            </div>
+
+           
+
+            <div class="form-group">
+
+
+
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="font-size:16px; width:80px">Dodaj</button>
+            <a class="btn btn-danger" style="font-size:16px; width:80px" href="@Url.Action("MeasurementList", "Measurement")">Anuluj</a>
+        </form>
+
+    </div>
+</div>
+
+

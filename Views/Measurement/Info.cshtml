@@ -1,0 +1,59 @@
+﻿@model Diary.Models.Measurement
+
+@{
+    ViewBag.Title = "Info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+
+        <div class="heading" style="background-color:white; width:250px; height:80px; ">
+            <h2> Szczegółowe informacje </h2>
+        </div>
+
+
+        <dt style="font-size: 20px; background-color: white; width: 350px; text-align: right; ">
+            Data:&emsp;
+        </dt>
+
+        <dd style="font-size: 20px; background-color: white; width: 350px; margin-right: auto;">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt style="font-size: 20px; background-color: white; width: 350px; text-align: right;">
+            Ciśnienie skurczowe:&emsp;
+        </dt>
+
+        <dd style="font-size: 20px; background-color: white; width: 350px; margin-right: auto; ">
+            @Html.DisplayFor(model => model.Systolic)
+        </dd>
+
+        <dt style="font-size: 20px; background-color: white; width: 350px; text-align: right;">
+            Ciśnienie rozkurczowe:&emsp;
+        </dt>
+
+        <dd style="font-size: 20px; background-color: white; width: 350px; margin-right: auto; ">
+            @Html.DisplayFor(model => model.Diastolic)
+        </dd>
+
+        <dt style="font-size: 20px; background-color: white; width: 350px; text-align: right;">
+            Puls:&emsp;
+        </dt>
+
+        <dd style="font-size: 20px; background-color: white; width: 350px; margin-right: auto; ">
+            @Html.DisplayFor(model => model.HeartRate)
+        </dd>
+
+    </dl>
+</div>
+<p style="font-size:18px; color:black">
+    @Html.ActionLink("Powrót", "MeasurementList") |
+
+</p>

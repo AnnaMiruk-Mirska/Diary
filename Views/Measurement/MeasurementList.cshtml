@@ -1,0 +1,47 @@
+﻿@model List<Diary.Models.Measurement>
+
+@{
+    ViewBag.Title = "MeasurementList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+
+
+
+
+
+    <div id="cards" style="font-size: 18px; background-color: white; width: 900px;  margin: auto; ">
+
+        <div class="heading" style="background-color: white; width: 150px; height: 100px; margin-right: auto;">
+            <\br>
+                <h1> Pomiary </h1>
+        </div>
+
+        <div class="card-deck">
+            <div class="row">
+
+
+
+                @foreach (var item in Model)
+                {
+
+                    <div class="col-sm-4">
+                        <div class="card">
+
+                            <div class="card-body" style="height:110px">
+
+                                <div class="card-title" style="font-size:25px;"><b>@item.Date</b> </div>
+
+                               <a class="btn btn-info btn-sm" style="font-size:16px;" href="@Url.Action("Info", "Measurement", new { id=item.Id})">Szczegóły</a>
+                               <h5 class="card-footer">   </h5>
+                            </div>
+
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+</div>
