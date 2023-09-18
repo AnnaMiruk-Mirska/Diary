@@ -93,3 +93,4 @@ C:\Users\Acer\source\repos\Diary\bin\Microsoft.Threading.Tasks.Extensions.Deskto
 C:\Users\Acer\source\repos\Diary\bin\System.Net.Http.Extensions.xml
 C:\Users\Acer\source\repos\Diary\bin\System.Net.Http.Primitives.xml
 C:\Users\Acer\source\repos\Diary\obj\Debug\Diary.csproj.App.config
+C:\Users\Acer\source\repos\Diary\bin\AjaxControlToolkit.dll

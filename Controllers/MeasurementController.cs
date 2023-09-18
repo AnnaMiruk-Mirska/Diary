@@ -19,6 +19,8 @@ namespace Diary.Controllers
         IFirebaseClient client;
 
 
+
+
         public MeasurementController()
         {
             IFirebaseConfig config = new FirebaseConfig
