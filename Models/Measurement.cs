@@ -11,9 +11,17 @@ namespace Diary.Models
     {
         public string Id { get; set; }
 
-        [DisplayName("Data")]
-        [DataType(DataType.Date)]
-        public DateTime Date { get; set; }
+
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd MMM yyyy}" )]
+        //[DisplayName("Data")]
+        //[DataType(DataType.Date)]
+        //public DateTime Date { get; set; }
+
+
+         [DataType(DataType.Date)]
+         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MM-yyyy hh:mm:ss}")]
+         [Display(Name = "Data")]
+         public DateTime Date { get; set; }
 
 
         [DisplayName("Ciśnienie rozkurczowe")]
@@ -28,6 +36,12 @@ namespace Diary.Models
         [DataType(DataType.CreditCard)]
 
         public int HeartRate { get; set; }
+
+
+        [DisplayName("Uwagi")]
+        [DataType(DataType.MultilineText)]
+
+        public string Notes { get; set; }
     }
 
 
