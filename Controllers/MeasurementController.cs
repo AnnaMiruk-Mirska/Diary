@@ -32,7 +32,17 @@ namespace Diary.Controllers
             client = new FirebaseClient(config);
         }
 
+
+
+        public ActionResult Home()
+        {
+            return View();
+        }
+
+
         List<Measurement> measurementList = new List<Measurement>();
+
+
 
 
         public ActionResult MeasurementList()

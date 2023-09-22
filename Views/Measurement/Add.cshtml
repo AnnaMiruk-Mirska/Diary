@@ -23,7 +23,7 @@
             <div class="form-group">
                 @Html.LabelFor(m => m.Date, new { @class = "col-md-10 control-label" })
                 <div class="col-md-10">
-                    @Html.TextBoxFor(m => m.Date, "{0:yyyy-MM-ddThh:mm}", new { @class = "form-control", type = "datetime-local" })
+                    @Html.TextBoxFor(m => m.Date, "{0:dd-MM-yyyyThh:mm}", new { @class = "form-control", type = "datetime-local" })
                     @Html.ValidationMessageFor(m => m.Date, "", new { @class = "text-danger" })
                 </div>
             </div>

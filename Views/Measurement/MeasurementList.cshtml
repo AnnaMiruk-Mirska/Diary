@@ -5,8 +5,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
-
 <div class="container-fluid">
 
 
@@ -27,35 +25,34 @@
                 @foreach (var item in Model)
                 {
 
-                    <div class="col-sm-4">
+                     <div class="col-sm-4">
                         <div class="card" style="background-color:white; height:150px">
 
-                            @if (item.Diastolic >= 90 || item.Systolic >= 140)
-                            {
-                                 <div class="card-body" style="background-color:red; height:110px" >
+                             @if (item.Diastolic >= 90 || item.Systolic >= 140)
+                              {
+                                    <div class="card-body" style="background-color:red; height:110px">
 
-                                    <div class="card-title" style="font-size:25px;"><b>@item.Date.ToShortDateString() </b> </div>
-                                    <div class="card-title" style="font-size:25px;"><b>@item.Date.ToShortTimeString()</b> </div>
-                                    <a class="btn btn-info btn-sm" style="font-size:16px;" href="@Url.Action("Info", "Measurement", new { id = item.Id })">Szczegóły</a>
-                                    <h5 class="card-footer"><b></b>   </h5>
-                                 </div>
-                            }
-                            else
-                            {
-                        <div class="card-body" style="background-color:lawngreen; height:110px">
+                                         <div class="card-title" style="font-size:25px;"><b>@item.Date.ToShortDateString() </b> </div>
+                                         <div class="card-title" style="font-size:25px;"><b>@item.Date.ToShortTimeString()</b> </div>
+                                         <a class="btn btn-info btn-sm" style="font-size:16px;" href="@Url.Action("Info", "Measurement", new { id = item.Id })">Szczegóły</a>
+                                         <h5 class="card-footer"><b></b>   </h5>
+                                    </div> 
+                              }
+                              else
+                              {
+                                    <div class="card-body" style="background-color:lawngreen; height:110px">
 
-                            <div class="card-title" style="font-size:25px;"><b>@item.Date.ToShortDateString() </b> </div>
-                            <div class="card-title" style="font-size:25px;"><b>@item.Date.ToShortTimeString()</b> </div>
-                            <a class="btn btn-info btn-sm" style="font-size:16px;" href="@Url.Action("Info", "Measurement", new { id = item.Id })">Szczegóły</a>
-                            <h5 class="card-footer">   </h5>
+                                        <div class="card-title" style="font-size:25px;"><b>@item.Date.ToShortDateString() </b> </div>
+                                        <div class="card-title" style="font-size:25px;"><b>@item.Date.ToShortTimeString()</b> </div>
+                                        <a class="btn btn-info btn-sm" style="font-size:16px;" href="@Url.Action("Info", "Measurement", new { id = item.Id })">Szczegóły</a>
+                                        <h5 class="card-footer">   </h5>
+                                    </div>
+                              }
+
                         </div>
-                            }
+                     </div>
 
-
-                        </div>
-                    </div>
-
-                }
+                 }
             </div>
         </div>
     </div>

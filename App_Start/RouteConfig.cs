@@ -16,7 +16,7 @@ namespace Diary
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Measurement", action = "Add", id = UrlParameter.Optional }
+                defaults: new { controller = "MeasurementController", action = "Home", id = UrlParameter.Optional }
             );
         }
     }

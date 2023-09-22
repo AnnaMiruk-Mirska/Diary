@@ -288,13 +288,14 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Measurement\MeasurementList.cshtml" />
     <Content Include="Views\Measurement\Contact.cshtml" />
     <Content Include="Views\Measurement\Info.cshtml" />
     <Content Include="Views\Measurement\Add.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Measurement\Home.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
