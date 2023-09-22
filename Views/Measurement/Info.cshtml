@@ -20,7 +20,7 @@
 
 
         <dt style="font-size: 20px; background-color: white; width: 350px; text-align: right; ">
-            Data:&emsp;
+            Data i godzina:&emsp;
         </dt>
 
         <dd style="font-size: 20px; background-color: white; width: 350px; margin-right: auto;">
@@ -51,9 +51,20 @@
             @Html.DisplayFor(model => model.HeartRate)
         </dd>
 
+        <dt style="font-size: 20px; background-color: white; width: 350px; text-align: right;">
+            Twoje uwagi:&emsp;
+        </dt>
+
+        <dd style="font-size: 20px; background-color: white; width: 350px; margin-right: auto; ">
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+
     </dl>
 </div>
+
+
 <p style="font-size:18px; color:black">
     @Html.ActionLink("Powrót", "MeasurementList") |
-
+    <a class="btn btn-primary btn-sm" style="font-size:16px;" href="@Url.Action("Edit", "Measurement", new { id=Model.Id})">Edytuj</a>
+    <a class="btn btn-danger btn-sm" style="font-size:16px;" href="@Url.Action("Delete", "Measurement", new { id=Model.Id})">Usuń</a>
 </p>

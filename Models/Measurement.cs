@@ -19,7 +19,7 @@ namespace Diary.Models
 
 
          [DataType(DataType.Date)]
-         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MM-yyyy hh:mm:ss}")]
+         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MM-yyyy hh:mm}")]
          [Display(Name = "Data")]
          public DateTime Date { get; set; }
 

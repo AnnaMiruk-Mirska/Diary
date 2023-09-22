@@ -105,8 +105,14 @@ namespace Diary.Controllers
             {
                 return View();
             }
+        }
 
-  
+
+        public ActionResult Delete(string id)
+        {
+            FirebaseResponse response = client.Delete("measurements/" + id);
+            return RedirectToAction("MeasurementList", "Measurement");
+
 
 
         }

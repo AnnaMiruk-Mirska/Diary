@@ -5,6 +5,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
+
 <div class="container-fluid">
 
 
@@ -14,11 +16,10 @@
     <div id="cards" style="font-size: 18px; background-color: white; width: 900px;  margin: auto; ">
 
         <div class="heading" style="background-color: white; width: 150px; height: 100px; margin-right: auto;">
-            <\br>
                 <h1> Pomiary </h1>
         </div>
 
-        <div class="card-deck">
+        <div class="card-body">
             <div class="row">
 
 
@@ -27,15 +28,29 @@
                 {
 
                     <div class="col-sm-4">
-                        <div class="card">
+                        <div class="card" style="background-color:white; height:150px">
 
-                            <div class="card-body" style="height:110px">
+                            @if (item.Diastolic >= 90 || item.Systolic >= 140)
+                            {
+                                 <div class="card-body" style="background-color:red; height:110px" >
 
-                                <div class="card-title" style="font-size:25px;"><b>@item.Date.ToShortDateString()</b> </div>
+                                    <div class="card-title" style="font-size:25px;"><b>@item.Date.ToShortDateString() </b> </div>
+                                    <div class="card-title" style="font-size:25px;"><b>@item.Date.ToShortTimeString()</b> </div>
+                                    <a class="btn btn-info btn-sm" style="font-size:16px;" href="@Url.Action("Info", "Measurement", new { id = item.Id })">Szczegóły</a>
+                                    <h5 class="card-footer"><b></b>   </h5>
+                                 </div>
+                            }
+                            else
+                            {
+                        <div class="card-body" style="background-color:lawngreen; height:110px">
 
-                               <a class="btn btn-info btn-sm" style="font-size:16px;" href="@Url.Action("Info", "Measurement", new { id=item.Id})">Szczegóły</a>
-                               <h5 class="card-footer">   </h5>
-                            </div>
+                            <div class="card-title" style="font-size:25px;"><b>@item.Date.ToShortDateString() </b> </div>
+                            <div class="card-title" style="font-size:25px;"><b>@item.Date.ToShortTimeString()</b> </div>
+                            <a class="btn btn-info btn-sm" style="font-size:16px;" href="@Url.Action("Info", "Measurement", new { id = item.Id })">Szczegóły</a>
+                            <h5 class="card-footer">   </h5>
+                        </div>
+                            }
+
 
                         </div>
                     </div>
