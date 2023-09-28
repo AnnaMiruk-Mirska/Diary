@@ -12,6 +12,7 @@ using Newtonsoft.Json;
 
 
 
+
 namespace Diary.Controllers
 {
     public class MeasurementController:Controller
@@ -44,7 +45,7 @@ namespace Diary.Controllers
 
 
 
-
+        [Authorize]
         public ActionResult MeasurementList()
         {
 
@@ -80,12 +81,13 @@ namespace Diary.Controllers
 
         }
 
+        [Authorize]
         public ActionResult Add()
         {
             return View();
         }
 
-
+        [Authorize]
         public ActionResult Info(string id)
         {
             FirebaseResponse response = client.Get("measurements/" + id);
@@ -94,10 +96,13 @@ namespace Diary.Controllers
             return View(measurement);
         }
 
+        [Authorize]
         public ActionResult Post()
         {
             return View();
         }
+
+        [Authorize]
 
         [HttpPost]
         public ActionResult Add(Measurement measurement)
@@ -118,6 +123,7 @@ namespace Diary.Controllers
         }
 
 
+        [Authorize]
         public ActionResult Delete(string id)
         {
             FirebaseResponse response = client.Delete("measurements/" + id);
@@ -126,5 +132,7 @@ namespace Diary.Controllers
 
 
         }
+
+
     }
 }
