@@ -112,3 +112,4 @@ C:\Users\Acer\source\repos\Diary\bin\System.Web.Http.xml
 C:\Users\Acer\source\repos\Diary\bin\System.Web.Http.Owin.xml
 C:\Users\Acer\source\repos\Diary\bin\Microsoft.Owin.Security.Cookies.dll
 C:\Users\Acer\source\repos\Diary\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Acer\source\repos\Diary\obj\Debug\Diary.csproj.AssemblyReference.cache

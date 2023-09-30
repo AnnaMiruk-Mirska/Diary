@@ -17,7 +17,7 @@ namespace Diary.App_Start
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
-                LoginPath = new PathString("/Account/Login"),
+                LoginPath = new PathString("/Account/LogIn"),
                 LogoutPath = new PathString("/Account/LogOff"),
                 ExpireTimeSpan = TimeSpan.FromMinutes(30.0)
             });

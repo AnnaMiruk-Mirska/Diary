@@ -14,9 +14,9 @@ namespace Diary
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Default",
+                name: "Measurement",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "MeasurementController", action = "Home", id = UrlParameter.Optional }
+                defaults: new { controller = "Measurement", action = "MeasurementList", id = UrlParameter.Optional }
             );
         }
     }
